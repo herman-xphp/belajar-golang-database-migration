@@ -17,6 +17,10 @@ func NewDB() *sql.DB {
 
 	return db
 
+	// migrate create -ext sql -dir db/migrations -seq create_table_first
+	// migrate create -ext sql -dir db/migrations -seq create_table_second
+	// migrate create -ext sql -dir db/migrations -seq create_table_third
+
 	// migrate -database "mysql://root:root@tcp(localhost:3306)/belajar_golang_database_migration" -path db/migrations up
 
 	// migrate -database "mysql://root:root@tcp(localhost:3306)/belajar_golang_database_migration" -path db/migrations down
